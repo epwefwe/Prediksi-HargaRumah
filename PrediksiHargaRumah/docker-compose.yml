@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  house_price_api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: house_price_api
+    ports:
+      - "5000:5000"
+    restart: always
+
+  house_price_frontend:
+    build: ./frontend
+    container_name: house_price_frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - house_price_api
+    environment:
+      - API_URL=http://house_price_api:5000
+    restart: always
