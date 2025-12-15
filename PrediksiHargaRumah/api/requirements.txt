@@ -1,0 +1,9 @@
+flask
+gunicorn
+flask-cors
+pandas
+numpy
+pyyaml
+scikit-learn
+joblib
+openpyxl
