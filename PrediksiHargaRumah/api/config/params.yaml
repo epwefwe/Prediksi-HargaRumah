@@ -1,0 +1,58 @@
+file_xlsx : DATA RUMAH.xlsx
+file_csv : DATA RUMAH.csv
+dir_dataset: data/raw/
+dataset_cleaned_path: data/processed/raw_dataset.pkl
+train_set_path:
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
+test_set_path:
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
+train_clean_set_path:
+- data/processed/x_train_clean.pkl
+- data/processed/y_train_clean.pkl
+production_model_path: models/production_model.pkl
+
+
+kolom_int:
+- HARGA
+- LB
+- LT
+- KT
+- KM
+- GRS
+
+blok_LB:
+- 150
+- 5
+blok_LT:
+- 200
+- 5
+rentang_harga:
+- 300000000
+- 70000000000
+rentang_LB:
+- 30
+- 2000
+rentang_LT:
+- 20
+- 2000
+rentang_KT:
+- 1
+- 15
+rentang_KM:
+- 1
+- 15
+rentang_GRS:
+- 0
+- 15
+
+prediktor:
+- LB
+- LT
+- KT
+- KM
+- GRS
+
+label:
+- HARGA

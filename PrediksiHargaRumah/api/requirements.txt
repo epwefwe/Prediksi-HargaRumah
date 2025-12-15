@@ -1,0 +1,8 @@
+flask
+pandas
+numpy
+pyyaml
+scikit-learn
+joblib
+openpyxl
+evidently==0.4.33
